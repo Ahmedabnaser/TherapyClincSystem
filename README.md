@@ -61,8 +61,9 @@ Follow these steps to get the Therapy Clinic System API running locally:
 1. 📥 Clone the Repository
 ```bash
 git clone https://github.com/Ahmedabnaser/TherapyClincSystem
-```
+```bash
 cd TherapyClincSystem
+```
 2. 📦 Restore Dependencies
 ```bash
 dotnet restore
