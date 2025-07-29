@@ -61,35 +61,37 @@ Follow these steps to get the Therapy Clinic System API running locally:
 1. 📥 Clone the Repository
 ```bash
 git clone https://github.com/Ahmedabnaser/TherapyClincSystem
-```bash
 cd TherapyClincSystem
 ```
+
 2. 📦 Restore Dependencies
 ```bash
 dotnet restore
 ```
+
 3. 🔧 Update Database Connection
 Edit the appsettings.json file and replace the connection string under "DefaultConnection" with your local SQL Server connection string.
-
 ```json
 "ConnectionStrings": {
   "DefaultConnection": "Server=YOUR_SERVER;Database=TherapyClincDb;Trusted_Connection=True;MultipleActiveResultSets=true"
 }
 ```
+
 4. 🗃️ Apply Migrations
- Make sure you have dotnet-ef tools installed:
-```bash
-dotnet ef database update
-```
+Make sure you have dotnet-ef tools installed:
 ```bash
 dotnet tool install --global dotnet-ef
 ```
+```bash
+dotnet ef database update
+```
+
 5. ▶️ Run the Application
 ```bash
 dotnet run --project TherapyClincSystem.Api
 ```
 The API should now be accessible at:
-```arduino
+```
 http://localhost:5255
 ```
 
